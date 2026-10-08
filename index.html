@@ -8,14 +8,28 @@
   body { font: 16px/1.6 system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; color: #222; background: #fff; }
   h1 { font-size: 26px; } h2 { font-size: 19px; margin-top: 28px; }
   a { color: #0b57d0; }
+  .yt { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border: 1px solid #ddd; border-radius: 8px; font-weight: 600; }
+  .yt svg { width: 28px; height: 20px; }
+  nav a { margin-right: 18px; }
 </style>
 </head>
 <body>
 <h1>Sochnye Momenty Uploader</h1>
+<p class="yt"><svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg> Uses YouTube API Services</p>
 <p>A private desktop tool used by one person, Anatoliy Krotov, to publish the owner's own videos to the owner's own YouTube channel
 <a href="https://www.youtube.com/channel/UCcXmrlD-gYyM7d1v9WmVRkg">Sochnye Momenty</a>.</p>
 <p>It is not a public service: it runs only on the owner's computer and is not offered to other users.</p>
-<p><a href="privacy.html">Privacy Policy</a></p>
+<h2>What it does</h2>
+<ul>
+  <li>Uploads the owner's own short videos on a schedule (YouTube Data API, videos.insert).</li>
+  <li>Reads view statistics of the owner's own videos (videos.list, channels.list).</li>
+  <li>Fixes titles or privacy of the owner's own uploads (videos.update).</li>
+</ul>
+<nav>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Use</a>
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>
+</nav>
 <p>Contact: anatoliykrotov15041993@gmail.com</p>
 </body>
 </html>
